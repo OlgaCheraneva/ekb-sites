@@ -5,6 +5,10 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
+    "scripts": {
+        "start": "gulp",
+        "build": "gulp build"  
+     },
     "devDependencies": {
         "autoprefixer": "9.7.1",
         "browser-sync": "2.26.7",
