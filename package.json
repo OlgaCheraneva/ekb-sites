@@ -1,10 +1,11 @@
 {
-  "name": "markup-graduation-project",
+  "name": "ekb-sites",
   "version": "1.0.0",
-  "description": "Разработка сайтов",
+  "description": "Разработка сайтов на заказ. Екатеринбург",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && gulp build --prefix client"
   },
   "dependencies": {
     "express": "4.17.1",
