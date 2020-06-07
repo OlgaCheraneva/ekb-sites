@@ -1,0 +1,32 @@
+{
+    "name": "markup-graduation-project",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "9.7.1",
+        "browser-sync": "2.26.7",
+        "cssnano": "4.1.10",
+        "del": "5.1.0",
+        "gulp": "4.0.2",
+        "gulp-concat": "2.6.1",
+        "gulp-htmlmin": "5.0.1",
+        "gulp-postcss": "8.0.0",
+        "gulp-sourcemaps": "2.6.5",
+        "gulp-terser": "1.2.0",
+        "normalize.css": "8.0.1"
+    },
+    "dependencies": {
+        "body-scroll-lock": "2.6.4",
+        "inputmask": "4.0.9",
+        "jquery": "3.4.1",
+        "swiper": "5.2.1"
+    },
+    "proxy": "http://localhost:5000"
+}

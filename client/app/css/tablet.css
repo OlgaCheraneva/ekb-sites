@@ -1,0 +1,131 @@
+@media (max-width: 768px) {
+    .fixed-container {
+        padding: 0 20px;
+    }
+    .header__inner {
+        padding: 20px 0;
+    }
+    .phone {
+        flex-grow: 0;
+        padding: 0;
+    }
+    .call-button {
+        width: 45px;
+        height: 45px;
+        padding: 0;
+        font-size: 0;
+        border: none;
+        border-radius: 50%;
+        background: url(../img/call.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .main {
+        margin-top: 85px;
+    }
+    .tablet-intro {
+        display: block;
+        background: url(../img/ellipse.svg);
+        background-position: -16vw 2px;
+        background-size: 143%;
+        background-repeat: no-repeat;
+    }
+    .tablet-intro__img {
+        display: block;
+        margin-left: 24vw;
+        width: 50vw;
+        min-width: 224px;
+        z-index: 1;
+        position: relative;
+    }
+    .intro {
+        background: none;
+    }
+    .intro__header {
+        font-size: 8vw;
+    }
+    .intro__inner-left {
+        width: 100%;
+        padding: 42px 0 0;
+        align-items: center;
+    }
+    .intro__img {
+        display: none;
+    }
+    .intro__specialty {
+        font-size: 4vw;
+    }
+    .services__inner {
+        padding: 18px 0 40px;
+        margin-top: 0;
+    }
+    .services__header {
+        font-size: 8vw;
+    }
+    .services__list {
+        padding: 18px 0 0;
+    }
+    .service:not(:last-child) {
+        padding: 0 20% 5%;
+    }
+    .service {
+        width: 100%;
+        padding: 0 20% 15%;
+        font-size: 3vw;
+    }
+    .service__img {
+        width: 19.375vw;
+        height: auto;
+        padding: 0;
+        margin-bottom: 4.688vw;
+    }
+    .services__btn {
+        padding: 0 70px;
+    }
+    .examples__header {
+        font-size: 8vw;
+    }
+    .examples__list-wrapper {
+        padding-bottom: 85px;
+    }
+    .example__name {
+        font-size: 100%;
+    }
+    .prices__inner {
+        padding: 9.9vw 0 10.807vw;
+    }
+    .prices__header {
+        font-size: 5.86vw;
+    }
+    .footer__inner {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 45px 0 40px;
+    }
+    .footer__nav {
+        width: 50%;
+    }
+    .footer__nav-list-item {
+        margin-bottom: 15px;
+    }
+    .contacts {
+        position: static;
+        font-family: 'Roboto Medium', sans-serif;
+        font-size: inherit;
+        padding: 26px 0 31px;
+        color: #8993ad;
+    }
+    .phone_sm {
+        margin-bottom: 22px;
+    }
+    .footer__call-button {
+        color: #fff;
+        background-color: #ff4e2e;
+        border: 1px solid #ff4e2e;
+        height: 54px;
+        margin-bottom: 50px;
+    }
+    .copyright {
+        font-size: 2.2vw;
+    }
+}

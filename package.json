@@ -1,0 +1,16 @@
+{
+  "name": "markup-graduation-project",
+  "version": "1.0.0",
+  "description": "Разработка сайтов",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "node-fetch": "2.6.0"
+  },
+  "keywords": [],
+  "author": "Cheraneva Olga",
+  "license": "ISC"
+}

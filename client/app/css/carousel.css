@@ -1,0 +1,108 @@
+.swiper {
+    width: 100%;
+    position: relative;
+    margin-bottom: 37px;
+}
+
+.carousel-wrapper {
+    width: 100%;
+}
+
+.card {
+    box-sizing: border-box;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    transform: translateZ(0) scale(1.1);
+}
+
+.arrow {
+    width: 60px;
+    height: 60px;
+    background: url(../img/arrow.svg), #fff;
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    position: absolute;
+    transition: transform 0.5s;
+    z-index: 1;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow_left {
+    transform: translate3d(-50%, 50%, 0);
+    left: 0;
+    top: 31.6%;
+}
+
+.arrow_left:hover {
+    transform: translate3d(-50%, 50%, 0) scale(1.1);
+    animation: moveArrow 1s infinite;
+}
+
+.arrow_right {
+    transform: rotate(180deg) translate3d(-50%, 20%, 0);
+    right: 0;
+    top: 41%;
+}
+
+.arrow_right:hover {
+    transform: rotate(180deg) translate3d(-50%, 20%, 0) scale(1.1);
+    animation: moveArrow 1s infinite;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+@keyframes moveArrow {
+    0%, 100% {
+        background-position-x: 60%;
+    }
+    70% {
+        background-position-x: 20%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .arrow {
+        display: none;
+    }
+    .swiper-pagination {
+        display: block;
+    }
+    .swiper-pagination-bullet {
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        margin: 0 15px !important;
+        background: #ebebeb;
+        opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+        background: #ff4e2e;
+    }
+}
+
+@media (max-width: 768px) {
+    .swiper-pagination-bullet {
+        width: 13px;
+        height: 13px;
+    }
+}
+
+@media (max-width: 320px) {
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        margin: 0 2.7%!important;
+    }
+}

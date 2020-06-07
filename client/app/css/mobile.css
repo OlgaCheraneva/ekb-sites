@@ -1,0 +1,120 @@
+@media (max-width: 425px) {
+    body {
+        font-size: 4.688vw;
+    }
+    .tablet-intro {
+        background-position-y: 3vw;
+    }
+    .header__inner {
+        padding: 17px 0;
+    }
+    .phone {
+        font-size: 5.625vw;
+    }
+    .phone_sm {
+        font-size: inherit;
+    }
+    .call-button {
+        width: 27px;
+        height: 27px;
+    }
+    .main {
+        margin-top: 61px;
+    }
+    .intro__inner {
+        padding: 0;
+    }
+    .intro__inner-left {
+        padding: 0;
+    }
+    .intro__header {
+        font-size: 30px;
+        margin: 12px 0 9px;
+        width: 100%;
+        text-align: center;
+    }
+    .intro__specialty {
+        font-size: 16px;
+        width: unset;
+        margin-bottom: 25px;
+        text-align: center;
+        line-height: 140%;
+    }
+    .services__header {
+        font-size: 30px;
+    }
+    .service:not(:last-child) {
+        padding: 0 6% 18%;
+    }
+    .service {
+        width: 100%;
+        padding: 0 6% 19%;
+        font-size: 5vw;
+    }
+    .examples {
+        background: #fbfbfb;
+    }
+    .examples__inner {
+        padding: 0 0 51px;
+        margin-top: 67px;
+    }
+    .examples__header {
+        font-size: 30px;
+        width: 100%;
+        margin: 50px 0 45px;
+        text-align: center;
+    }
+    .examples__list-wrapper {
+        padding-bottom: 40px;
+    }
+    .examples__list {
+        padding: 0 0 17px;
+    }
+    .example__img {
+        padding-bottom: 17px;
+    }
+    .example__name {
+        font-family: 'Roboto Medium', sans-serif;
+        font-size: 5.625vw;
+        text-align: left;
+    }
+    .examples__btn {
+        padding: 0 76px;
+    }
+    .prices__inner {
+        padding: 44px 0;
+    }
+    .prices__header {
+        font-size: 28px;
+        margin: 0 0 34px 0;
+        line-height: 140%;
+        font-size: 8.75vw;
+    }
+    .prices__info {
+        line-height: 200%;
+        text-indent: -13px;
+        padding-left: 13px;
+    }
+    .footer__inner {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .footer__nav {
+        width: auto;
+    }
+    .contacts {
+        width: auto;
+        font-size: 6.25vw;
+    }
+    .fas {
+        padding-right: 6vw;
+        font-size: 4vw;
+    }
+    .footer__call-button {
+        width: 100%;
+    }
+    .copyright {
+        font-size: 3.75vw;
+        padding: 18px 0;
+    }
+}

@@ -1,0 +1,55 @@
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .menu-button {
+        display: block;
+        width: 45px;
+        height: 33.75px;
+        position: relative;
+        background: none;
+        border: none;
+        transform: rotate(0deg);
+        transition: 0.5s ease-out;
+        cursor: pointer;
+        padding: 0;
+    }
+    .menu-button span {
+        position: absolute;
+        width: 100%;
+        height: 20%;
+        left: 0;
+        background-image: linear-gradient(77deg, #ff8f5a, #ff2f96);
+        opacity: 1;
+        transform: rotate(0deg);
+        transition: 0.5s ease-out;
+    }
+    .menu-button span:nth-child(1) {
+        top: 0;
+    }
+    .menu-button span:nth-child(2), .menu-button span:nth-child(3) {
+        top: 40%;
+    }
+    .menu-button span:nth-child(4) {
+        top: 80%;
+    }
+    .menu-button.open span:nth-child(1), .menu-button.open span:nth-child(4) {
+        top: 40%;
+        width: 0%;
+        left: 50%;
+    }
+    .menu-button.open span:nth-child(2) {
+        transform: rotate(45deg);
+    }
+    .menu-button.open span:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+}
+
+@media (max-width: 425px) {
+    .menu-button {
+        width: 24px;
+        height: 18px;
+    }
+}

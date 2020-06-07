@@ -1,0 +1,46 @@
+.button {
+    cursor: pointer;
+    color: #e95e79;
+    border: 1px solid #e95e79;
+    background: none;
+}
+
+.button_filled {
+    color: #fff;
+    background-color: #ff4e2e;
+    border: 1px solid #ff4e2e;
+}
+
+.button_sm {
+    height: 45px;
+    padding: 0 40px;
+    font-size: 16px;
+}
+
+.button_md {
+    height: 45px;
+    padding: 0 60px;
+    font-size: 16px;
+}
+
+.button_lg {
+    height: 60px;
+    padding: 0 70px;
+}
+
+@media (max-width: 1024px) {
+    .button_lg {
+        height: 67px;
+        padding: 0 9.277vw;
+    }
+}
+
+@media (max-width: 320px) {
+    .button {
+        font-size: 16px;
+    }
+    .button_lg {
+        height: 55px;
+        padding: 0 82px;
+    }
+}

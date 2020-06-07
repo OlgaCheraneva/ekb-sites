@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg enable-background="new 0 0 459 459" version="1.1" viewBox="0 0 459 459" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+	<linearGradient id="PSgrad_0" x1="0%" x2="22.495%" y1="97.437%" y2="0%">
+	<stop offset="0%" stop-color="rgb(255,143,90)" stop-opacity="1" />
+	<stop offset="99%" stop-color="rgb(255,47,150)" stop-opacity="1" />
+	</linearGradient>
+	</defs>
+
+	<path fill="url(#PSgrad_0)" d="M0,382.5h459v-51H0V382.5z M0,255h459v-51H0V255z M0,76.5v51h459v-51H0z"/>
+</svg>

@@ -1,0 +1,232 @@
+.elements {
+    position: absolute;
+    width: 1920px;
+    right: calc((100vw - 1920px) / 2);
+    top: 0;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.elements_tablet {
+    display: none;
+    z-index: 0;
+}
+
+.element {
+    font-size: 60px;
+    font-weight: bold;
+    position: absolute;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.curly-brackets {
+    transform: matrix( 0.72159603080403, 0.37432663296015, -0.37432663296015, 0.72159603080403, 0, 0);
+    animation: moveCurlyBrackets 2s 1s ease-out forwards;
+}
+
+@keyframes moveCurlyBrackets {
+    to {
+        opacity: 1;
+        left: 124px;
+        top: 30px;
+    }
+}
+
+.hashtag {
+    transform: matrix( 0.91532249290851, 0.26083794888422, -0.26083794888422, 0.91532249290852, 0, 0);
+    animation: moveHashtag 2s 1s ease-out forwards;
+}
+
+@keyframes moveHashtag {
+    to {
+        opacity: 1;
+        left: 245px;
+        top: 263px;
+    }
+}
+
+.brackets-with-slash {
+    transform: matrix( 0.62913254694498, -0.25657231186215, 0.25657231186215, 0.62913254694498, 0, 0);
+    animation: moveBracketsWithSlash 2s 1s ease-out forwards;
+}
+
+@keyframes moveBracketsWithSlash {
+    to {
+        opacity: 1;
+        left: 363px;
+        top: 560px;
+    }
+}
+
+.bottom-brackets-with-slash {
+    display: none;
+}
+
+.top-div-tag {
+    transform: matrix( 0.48280448948131, -0.12214047770298, 0.12214047770298, 0.48280448948131, 0, 0);
+    animation: moveTopDivTag 2s 1s ease-out forwards;
+}
+
+@keyframes moveTopDivTag {
+    to {
+        opacity: 1;
+        left: 752px;
+        top: 50.5px;
+    }
+}
+
+.bottom-div-tag {
+    transform: matrix( 0.58798214978162, 0.21554688540119, -0.21554688540119, 0.58798214978162, 0, 0);
+    animation: moveBottomDivTag 2s 1s ease-out forwards;
+}
+
+@keyframes moveBottomDivTag {
+    to {
+        opacity: 1;
+        left: 924px;
+        top: 430px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .elements {
+        width: 100vw;
+        right: 0;
+    }
+    .element {
+        font-size: 5.859vw;
+    }
+    .curly-brackets {
+        transform: matrix( 0.72159603080403, 0.37432663296015, -0.37432663296015, 0.72159603080403, 0, 0);
+        animation: moveCurlyBrackets 2s 1s ease-out forwards;
+    }
+    @keyframes moveCurlyBrackets {
+        to {
+            opacity: 1;
+            left: 7%;
+            top: 6%;
+        }
+    }
+    .hashtag {
+        transform: matrix( 0.91532249290851, 0.26083794888422, -0.26083794888422, 0.91532249290852, 0, 0);
+        animation: moveHashtag 2s 1s ease-out forwards;
+    }
+    @keyframes moveHashtag {
+        to {
+            opacity: 1;
+            left: 5.566%;
+            top: 78%;
+        }
+    }
+    .brackets-with-slash {
+        transform: matrix( 0.75071668916306, 0.18406909437483, -0.18406909437483, 0.75071668916306, 0, 0);
+        animation: moveBracketsWithSlash 2s 1s ease-out forwards;
+    }
+    @keyframes moveBracketsWithSlash {
+        to {
+            opacity: 1;
+            left: 40.234%;
+            top: 17%;
+        }
+    }
+    .bottom-brackets-with-slash {
+        transform: matrix( 0.62913254694498, -0.25657231186215, 0.25657231186215, 0.62913254694498, 0, 0);
+        display: block;
+        animation: moveBottomBracketsWithSlash 2s 1s ease-out forwards;
+    }
+    @keyframes moveBottomBracketsWithSlash {
+        to {
+            opacity: 1;
+            left: 33.789%;
+            top: 70%;
+        }
+    }
+    .top-div-tag {
+        transform: matrix( 0.48280448948131, -0.12214047770298, 0.12214047770298, 0.48280448948131, 0, 0);
+        animation: moveTopDivTag 2s 1s ease-out forwards;
+    }
+    @keyframes moveTopDivTag {
+        to {
+            opacity: 1;
+            left: 83%;
+            top: 4%;
+        }
+    }
+    .bottom-div-tag {
+        transform: matrix( 0.58798214978162, 0.21554688540119, -0.21554688540119, 0.58798214978162, 0, 0);
+        animation: moveBottomDivTag 2s 1s ease-out forwards;
+    }
+    @keyframes moveBottomDivTag {
+        to {
+            opacity: 1;
+            left: 82.227%;
+            top: 64%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .elements_laptop {
+        display: none;
+    }
+    .elements_tablet {
+        display: block;
+    }
+    .element {
+        font-size: 14vw;
+    }
+    .curly-brackets {
+        transform: matrix( 0.36740269927945, 0.19058948426935, -0.19058948426935, 0.36740269927945, 0, 0);
+        animation: moveCurlyBrackets 2s 1s ease-out forwards;
+    }
+    @keyframes moveCurlyBrackets {
+        to {
+            opacity: 1;
+            left: 0;
+            top: 0;
+        }
+    }
+    .hashtag {
+        transform: matrix( 0.46238977293659, 0.13176645487491, -0.13176645487491, 0.46238977293659, 0, 0);
+        animation: moveHashtag 2s 1s ease-out forwards;
+    }
+    @keyframes moveHashtag {
+        to {
+            opacity: 1;
+            left: 8.645vw;
+            top: 45vw;
+        }
+    }
+    .brackets-with-slash {
+        transform: matrix( 0.26823714401995, -0.16460249330364, 0.1653324505919, 0.26497828676839, 0, 0);
+        animation: moveBracketsWithSlash 2s 1s ease-out forwards;
+    }
+    @keyframes moveBracketsWithSlash {
+        to {
+            opacity: 1;
+            left: 80.227vw;
+            top: 6.688vw;
+        }
+    }
+    .div-tag {
+        transform: matrix( 0.23758986125219, 0.0870974648037, -0.0870974648037, 0.23758986125219, 0, 0);
+        animation: moveDivTag 2s 1s ease-out forwards;
+    }
+    @keyframes moveDivTag {
+        to {
+            opacity: 1;
+            left: 70.441vw;
+            top: 34.063vw;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .element {
+        font-size: 60px;
+    }
+}

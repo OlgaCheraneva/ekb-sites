@@ -1,0 +1,36 @@
+@media (max-width: 1024px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 99%;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .nav__list {
+        flex-direction: column;
+        background: #ffffffba;
+    }
+    .nav__link {
+        display: block;
+        width: 100%;
+        padding: 20px 40px;
+        transition: background 0.5s ease-out;
+    }
+    .nav__link:hover {
+        font-weight: normal;
+        background: #bdbdbd76;
+    }
+    .nav__link_active {
+        border-bottom: none;
+    }
+    .nav__link_active:hover {
+        background: #e95e7a45;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__link {
+        padding: 20px;
+    }
+}
