@@ -1,4 +1,13 @@
 $(function () {
+    // Visitors
+    $.ajax({
+        type: 'GET',
+        url: 'visitor.php',
+        error: () => {
+            alert('Возникла ошибка');
+        },
+    });
+
     // Header
     const header = $('.header');
     const headerClass = 'header_translucent-bg';
@@ -111,34 +120,20 @@ $(function () {
     $('.dialog__form').submit(function (event) {
         event.preventDefault();
 
-        function getFormData($form) {
-            const unindexedArray = $form.serializeArray();
-            const indexedArray = {};
-
-            $.map(unindexedArray, function (n) {
-                indexedArray[n['name']] = n['value'];
-            });
-
-            return indexedArray;
-        }
-        const data = getFormData($(this));
-
-        fetch('/', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(data),
-        })
-            .then(() => {
+        $.ajax({
+            type: 'POST',
+            url: 'mail.php',
+            data: $(this).serialize(),
+            success: () => {
                 closeDialog();
                 alert('Отправлено');
-            })
-            .catch(() =>
+            },
+            error: () => {
                 alert(
-                    'Возникла ошибка.\nПопробуйте связаться со мной по номеру: +7 950 654 53 55'
-                )
-            );
+                    'Возникла ошибка. Свяжитесь со мной по номеру +7 950 654 53 55'
+                );
+            },
+        });
 
         $(this).trigger('reset');
     });

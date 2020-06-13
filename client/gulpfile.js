@@ -9,7 +9,7 @@ const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
 
-gulp.task('clean', async function () {
+gulp.task('clean', async function() {
     del.sync('dist');
 });
 
@@ -17,11 +17,13 @@ gulp.task('css', () => {
     return gulp.src('app/css/index.min.css').pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('styles', function () {
+gulp.task('styles', function() {
     return gulp
         .src([
             'node_modules/normalize.css/normalize.css',
             'node_modules/swiper/css/swiper.min.css',
+            'app/css/fontawesome.min.css',
+            'app/css/solid.min.css',
             'app/css/style.css',
             'app/css/intro-elements.css',
             'app/css/prices-elements.css',
@@ -32,7 +34,7 @@ gulp.task('styles', function () {
             'app/css/drop-down-menu.css',
             'app/css/laptop.css',
             'app/css/tablet.css',
-            'app/css/mobile.css',
+            'app/css/mobile.css'
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('index.min.css'))
@@ -42,12 +44,13 @@ gulp.task('styles', function () {
         .pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('export', async function () {
+gulp.task('export', async function() {
     gulp.src('app/*.php').pipe(gulp.dest('dist/'));
+    gulp.src('app/webfonts/*').pipe(gulp.dest('dist/webfonts'));
     gulp.src('app/img/*').pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('html', function () {
+gulp.task('html', function() {
     return gulp
         .src('app/*.html')
         .pipe(
@@ -55,24 +58,24 @@ gulp.task('html', function () {
                 collapseInlineTagWhitespace: true,
                 collapseWhitespace: true,
                 continueOnParseError: true,
-                removeAttributeQuotes: true,
+                removeAttributeQuotes: true
             })
         )
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('js', function () {
+gulp.task('js', function() {
     return gulp.src('app/js/index.min.js').pipe(gulp.dest('dist/js'));
 });
 
-gulp.task('scripts', function () {
+gulp.task('scripts', function() {
     return gulp
         .src([
             'node_modules/jquery/dist/jquery.min.js',
             'node_modules/swiper/js/swiper.min.js',
             'node_modules/inputmask/dist/min/jquery.inputmask.bundle.min.js',
             'node_modules/body-scroll-lock/lib/bodyScrollLock.min.js',
-            'app/js/index.js',
+            'app/js/index.js'
         ])
         .pipe(concat('index.min.js'))
         .pipe(terser())
@@ -81,9 +84,9 @@ gulp.task('scripts', function () {
 });
 
 // Static Server + watching html/css files
-gulp.task('serve', function () {
+gulp.task('serve', function() {
     browserSync.init({
-        server: 'app/',
+        server: 'app/'
     });
 
     gulp.watch('app/index.html').on('change', browserSync.reload);

@@ -12,16 +12,16 @@
             name="Keywords"
             content="landing page, сайт создание, разработка сайт, сайт под ключ, заказать сайт, заказать официальный сайт, лендинг пейдж, сайт продвижение"
         />
+        <meta
+            name="description"
+            content="Создание и продвижение сайтов. Адаптивная вёрстка под все устройства и браузеры."
+        />
         <title>
             Создание и продвижение сайтов | Frontend-разработчик и
             веб-верстальщик Черанева Ольга
         </title>
         <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
         <link rel="stylesheet" href="css/index.min.css" />
-        <script
-            src="https://kit.fontawesome.com/e5e7de10a6.js"
-            crossorigin="anonymous"
-        ></script>
     </head>
     <body>
         <svg width="0" height="0" class="hidden" style="display: none;">
@@ -91,6 +91,7 @@
                             name="form_subject"
                             value="Заказ звонка"
                         />
+                        <label for="name" class="hidden">Введите имя</label>
                         <input
                             type="text"
                             class="dialog__input-field"
@@ -99,6 +100,9 @@
                             placeholder="Имя"
                             required
                         />
+                        <label for="phone" class="hidden"
+                            >Введите номер телефона</label
+                        >
                         <input
                             type="tel"
                             class="dialog__input-field phone-number-input"
@@ -138,6 +142,9 @@
                             value="Заявка"
                         />
                         <div class="form-group">
+                            <label for="contact-name" class="hidden"
+                                >Введите имя</label
+                            >
                             <input
                                 type="text"
                                 class="dialog__input-field dialog__input-field_mr"
@@ -146,6 +153,9 @@
                                 placeholder="Имя"
                                 required
                             />
+                            <label for="contact-phone" class="hidden"
+                                >Введите номер телефона</label
+                            >
                             <input
                                 type="tel"
                                 class="dialog__input-field phone-number-input"
@@ -156,6 +166,7 @@
                                 required
                             />
                         </div>
+                        <label for="email" class="hidden">Введите email</label>
                         <input
                             type="email"
                             class="dialog__input-field"
@@ -164,6 +175,9 @@
                             id="email"
                             required
                         />
+                        <label for="message" class="hidden"
+                            >Введите сообщение</label
+                        >
                         <textarea
                             class="dialog__input-field dialog__input-field_tall"
                             placeholder="Ваше сообщение"
@@ -605,6 +619,7 @@
                                         href="https://vk.com/cheranevaolga"
                                         class="social-network-link vk"
                                     >
+                                        <span class="hidden">vk</span>
                                         <svg class="icon vk-icon">
                                             <use xlink:href="#vk"></use>
                                         </svg>
@@ -615,6 +630,7 @@
                                         href="https://www.facebook.com/profile.php?id=100052563181885"
                                         class="social-network-link facebook"
                                     >
+                                        <span class="hidden">facebook</span>
                                         <svg class="icon facebook-icon">
                                             <use xlink:href="#facebook"></use>
                                         </svg>
@@ -625,6 +641,7 @@
                                         href="https://twitter.com/Cheraneva_Olga"
                                         class="social-network-link twitter"
                                     >
+                                        <span class="hidden">twitter</span>
                                         <svg class="icon twitter-icon">
                                             <use xlink:href="#twitter"></use>
                                         </svg>
@@ -636,6 +653,7 @@
                                         target="_blank"
                                         class="social-network-link instagram"
                                     >
+                                        <span class="hidden">instagram</span>
                                         <svg class="icon instagram-icon">
                                             <use xlink:href="#instagram"></use>
                                         </svg>
