@@ -18,6 +18,10 @@
         </title>
         <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
         <link rel="stylesheet" href="css/index.min.css" />
+        <script
+            src="https://kit.fontawesome.com/e5e7de10a6.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <svg width="0" height="0" class="hidden" style="display: none;">
@@ -105,13 +109,17 @@
                             required
                         />
                         <button
+                            aria-label="Отправить"
                             class="dialog__submit-btn button button_filled button_lg"
                             type="submit"
                         >
                             Отправить
                         </button>
                     </form>
-                    <button class="dialog__close-btn close-call-request-dialog">
+                    <button
+                        class="dialog__close-btn close-call-request-dialog"
+                        aria-label="Закрыть"
+                    >
                         <svg class="dialog__close-btn-img">
                             <use xlink:href="#close"></use>
                         </svg>
@@ -166,13 +174,17 @@
                             required
                         ></textarea>
                         <button
+                            aria-label="Отправить"
                             class="dialog__submit-btn button button_filled button_lg"
                             type="submit"
                         >
                             Отправить
                         </button>
                     </form>
-                    <button class="dialog__close-btn close-contact-form-dialog">
+                    <button
+                        class="dialog__close-btn close-contact-form-dialog"
+                        aria-label="Закрыть"
+                    >
                         <svg class="dialog__close-btn-img">
                             <use xlink:href="#close"></use>
                         </svg>
@@ -182,7 +194,11 @@
             <header class="header">
                 <div class="fixed-container">
                     <div class="header__inner">
-                        <button class="menu-button" data-target="menu-button">
+                        <button
+                            class="menu-button"
+                            data-target="menu-button"
+                            aria-label="Меню"
+                        >
                             <span></span>
                             <span></span>
                             <span></span>
@@ -225,6 +241,7 @@
                         </div>
                         <button
                             class="open-call-request-dialog call-button button button_sm"
+                            aria-label="Заказать звонок"
                         >
                             Заказать звонок
                         </button>
@@ -414,9 +431,24 @@
                                             >
                                         </div>
                                         <div class="swiper-slide card example">
-                                            <a href="#" class="example__link">
+                                            <a
+                                                href="https://olga-cheraneva-movie-finder.netlify.app/"
+                                                class="example__link"
+                                            >
                                                 <img
                                                     src="img/example-4.png"
+                                                    alt="Поиск фильмов и сериалов"
+                                                    class="example__img"
+                                                />
+                                                <div class="example__name">
+                                                    Поиск фильмов и сериалов
+                                                </div></a
+                                            >
+                                        </div>
+                                        <div class="swiper-slide card example">
+                                            <a href="/" class="example__link">
+                                                <img
+                                                    src="img/example-5.png"
                                                     alt="Сайт магазина детской одежды"
                                                     class="example__img"
                                                 />
@@ -426,9 +458,9 @@
                                             >
                                         </div>
                                         <div class="swiper-slide card example">
-                                            <a href="#" class="example__link">
+                                            <a href="/" class="example__link">
                                                 <img
-                                                    src="img/example-5.png"
+                                                    src="img/example-6.png"
                                                     alt="Сайт психолога Веры Антоновой"
                                                     class="example__img"
                                                 />
@@ -439,9 +471,9 @@
                                             >
                                         </div>
                                         <div class="swiper-slide card example">
-                                            <a href="#" class="example__link">
+                                            <a href="/" class="example__link">
                                                 <img
-                                                    src="img/example-6.png"
+                                                    src="img/example-7.png"
                                                     alt="Сайт магазина «Рыболов»"
                                                     class="example__img"
                                                 />
@@ -454,15 +486,18 @@
                                     <div class="swiper-pagination"></div>
                                 </div>
                                 <button
+                                    aria-label="Влево"
                                     class="arrow arrow_left"
                                     data-action="slideLeft"
                                 ></button>
                                 <button
+                                    aria-label="Вправо"
                                     class="arrow arrow_right"
                                     data-action="slideRight"
                                 ></button>
                             </div>
                             <button
+                                aria-label="Заказать проект"
                                 class="open-contact-form-dialog examples__btn button button_filled button_lg"
                             >
                                 Заказать проект
@@ -566,7 +601,10 @@
                             </button>
                             <ul class="social-networks">
                                 <li class="social-network">
-                                    <a href="#" class="social-network-link vk">
+                                    <a
+                                        href="https://vk.com/cheranevaolga"
+                                        class="social-network-link vk"
+                                    >
                                         <svg class="icon vk-icon">
                                             <use xlink:href="#vk"></use>
                                         </svg>
@@ -574,7 +612,7 @@
                                 </li>
                                 <li class="social-network">
                                     <a
-                                        href="#"
+                                        href="https://www.facebook.com/profile.php?id=100052563181885"
                                         class="social-network-link facebook"
                                     >
                                         <svg class="icon facebook-icon">
@@ -584,7 +622,7 @@
                                 </li>
                                 <li class="social-network">
                                     <a
-                                        href="#"
+                                        href="https://twitter.com/Cheraneva_Olga"
                                         class="social-network-link twitter"
                                     >
                                         <svg class="icon twitter-icon">

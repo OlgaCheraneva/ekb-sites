@@ -22,8 +22,6 @@ gulp.task('styles', function () {
         .src([
             'node_modules/normalize.css/normalize.css',
             'node_modules/swiper/css/swiper.min.css',
-            'app/css/fontawesome.min.css',
-            'app/css/solid.min.css',
             'app/css/style.css',
             'app/css/intro-elements.css',
             'app/css/prices-elements.css',
@@ -46,7 +44,6 @@ gulp.task('styles', function () {
 
 gulp.task('export', async function () {
     gulp.src('app/*.php').pipe(gulp.dest('dist/'));
-    gulp.src('app/webfonts/*').pipe(gulp.dest('dist/webfonts'));
     gulp.src('app/img/*').pipe(gulp.dest('dist/img'));
 });
 
