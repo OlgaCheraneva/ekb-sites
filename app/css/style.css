@@ -14,6 +14,14 @@ html, body {
     overflow: hidden;
 }
 
+.hide-tablet {
+    display: inline-block;
+}
+
+.show-tablet {
+    display: none;
+}
+
 .site-wrapper {
     overflow-x: hidden;
 }
@@ -139,6 +147,26 @@ button {
     flex-grow: 1;
     text-align: end;
     font-size: 25px;
+}
+
+.header__messengers {
+    align-self: center;
+    padding-right: 28px;
+}
+
+.header__messenger__link {
+    display: inline-block;
+    padding: 0 0.5rem;
+    transition: color .3s ease-out;
+}
+
+.header__messenger__link:hover {
+    color: #e95e79;
+}
+
+.header__messenger__icon {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .main {

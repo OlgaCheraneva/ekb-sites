@@ -8,13 +8,19 @@
     .header__inner {
         padding: 17px 0;
     }
+    .header__messenger__link {
+        padding: 0;
+    }
+    .header__messenger__link:not(:last-child) {
+        padding-right: 0.5rem;
+    }
     .phone {
         font-size: 5.625vw;
     }
     .phone_sm {
         font-size: inherit;
     }
-    .call-button {
+    .header__messenger__icon {
         width: 27px;
         height: 27px;
     }

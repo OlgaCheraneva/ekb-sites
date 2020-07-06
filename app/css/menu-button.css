@@ -13,6 +13,7 @@
         transform: rotate(0deg);
         transition: 0.5s ease-out;
         cursor: pointer;
+        margin-right: auto;
         padding: 0;
     }
     .menu-button span {
@@ -44,6 +45,12 @@
     }
     .menu-button.open span:nth-child(3) {
         transform: rotate(-45deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-button {
+        margin-right: unset;
     }
 }
 
