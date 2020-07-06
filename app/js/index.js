@@ -1,12 +1,6 @@
 $(function () {
     // Visitors
-    $.ajax({
-        type: 'GET',
-        url: 'visitor.php',
-        error: () => {
-            alert('Возникла ошибка');
-        },
-    });
+    sendTelegramMessage({message: 'You have a visitor on your website'});
 
     // Header
     const header = $('.header');
@@ -120,23 +114,49 @@ $(function () {
     $('.dialog__form').submit(function (event) {
         event.preventDefault();
 
-        $.ajax({
-            type: 'POST',
-            url: 'mail.php',
-            data: $(this).serialize(),
-            success: () => {
-                closeDialog();
-                alert('Отправлено');
-            },
-            error: () => {
+        const formElem = event.target;
+        const formData = {};
+        [...formElem.elements].forEach((el) => {
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                formData[el.name] = el.value;
+            }
+        });
+
+        sendTelegramMessage(formData)
+            .then(() => alert('Отправлено'))
+            .catch((e) => {
+                console.error(e);
                 alert(
                     'Возникла ошибка. Свяжитесь со мной по номеру +7 950 654 53 55'
                 );
-            },
-        });
+            });
 
+        closeDialog();
         $(this).trigger('reset');
     });
+
+    function sendTelegramMessage(formData) {
+        // Telegram Message Bot Instruction
+        // @botfather
+        // START
+        // /newbot
+        // [name]
+        // [name_bot]
+        // Get the token
+        // Create a new group, add your bot to this group
+        // START BOT
+        // In group chat: /join @[name_bot]
+        // Go: https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXXXXX/getUpdates, xxx... - token
+        // Get the id with minus (group chatId)
+
+        const token = '1176307202:AAFMfmvNmFVi2wy2A-2NsIjmgxgtPypsGT4';
+        const chatId = '-327278816';
+        return fetch(
+            `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&parse_mode=html&text=${encodeURI(
+                JSON.stringify(formData, null, '\t')
+            )}`
+        );
+    }
 
     // Carousel
     new Swiper('.swiper-container', {
