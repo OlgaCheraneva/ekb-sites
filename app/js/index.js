@@ -1,6 +1,6 @@
 $(function () {
     // Visitors
-    sendTelegramMessage({message: 'You have a visitor on your website'});
+    sendTelegramMessage({message: 'Ekb Sites was visited'});
 
     // Header
     const header = $('.header');
@@ -206,6 +206,12 @@ $(function () {
         if (isSectionEntirelyInvisible(section))
             sectionElements.removeClass(animationClassName);
     });
+
+    // Footer
+
+    const currentYearElem = $('#js-current-year');
+    const currentYearValue = new Date().getFullYear();
+    currentYearElem.text(currentYearValue);
 
     // Share links
 
