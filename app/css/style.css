@@ -230,19 +230,6 @@ button {
     height: 100%;
 }
 
-.intro__specialty_show-1024-down {
-    display: none;
-}
-
-.intro__specialty__description {
-    margin: 0;
-}
-
-.intro__specialty__description_size-sm {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-}
-
 /* Prices */
 
 .prices {
