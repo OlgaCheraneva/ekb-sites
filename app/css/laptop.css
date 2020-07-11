@@ -30,6 +30,12 @@
     .services__inner {
         margin-top: 100px;
     }
+    .intro__specialty_show-1025-up {
+        display: none;
+    }
+    .intro__specialty_show-1024-down {
+        display: inline;
+    }
     .services__list {
         flex-wrap: wrap;
         justify-content: center;

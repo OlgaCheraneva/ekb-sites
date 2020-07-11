@@ -64,6 +64,12 @@
     .intro__specialty {
         font-size: 4vw;
     }
+    .intro__specialty__description {
+        text-align: center;
+    }
+    .intro__specialty__description_size-sm {
+        font-size: inherit;
+    }
     .services__inner {
         padding: 18px 0 40px;
         margin-top: 0;
