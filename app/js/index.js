@@ -1,6 +1,6 @@
 $(function () {
     // Visitors
-    sendTelegramMessage({message: 'Online Store Dev was visited'});
+    sendTelegramMessage({message: 'You have a visitor on your website'});
 
     // Header
     const header = $('.header');
@@ -136,6 +136,19 @@ $(function () {
     });
 
     function sendTelegramMessage(formData) {
+        // Telegram Message Bot Instruction
+        // @botfather
+        // START
+        // /newbot
+        // [name]
+        // [name_bot]
+        // Get the token
+        // Create a new group, add your bot to this group
+        // START BOT
+        // In group chat: /join @[name_bot]
+        // Go: https://api.telegram.org/botXXXXXXXXXXXXXXXXXXXXXXX/getUpdates, xxx... - token
+        // Get the id with minus (group chatId)
+
         const token = '1176307202:AAFMfmvNmFVi2wy2A-2NsIjmgxgtPypsGT4';
         const chatId = '-327278816';
         return fetch(
@@ -193,12 +206,6 @@ $(function () {
         if (isSectionEntirelyInvisible(section))
             sectionElements.removeClass(animationClassName);
     });
-
-    // Footer
-
-    const currentYearElem = $('#js-current-year');
-    const currentYearValue = new Date().getFullYear();
-    currentYearElem.text(currentYearValue);
 
     // Share links
 
