@@ -455,3 +455,12 @@ button {
 .copyright__inner {
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    .bold-on-hover:before {
+        opacity: 0;
+    }
+    .bold-on-hover:hover:before {
+        opacity: 0;
+    }
+}
