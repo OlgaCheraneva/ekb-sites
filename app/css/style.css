@@ -26,6 +26,10 @@ html, body {
     overflow-x: hidden;
 }
 
+.link {
+    color: #e95e79;
+}
+
 a {
     color: inherit;
     text-decoration: none;
