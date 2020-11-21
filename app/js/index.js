@@ -6,6 +6,8 @@ $(function () {
     const header = $('.header');
     const headerClass = 'header_translucent-bg';
 
+    if ($(window).scrollTop() > header.height()) header.addClass(headerClass);
+
     $(window).on('scroll', function () {
         $(window).scrollTop() > header.outerHeight()
             ? header.addClass(headerClass)
@@ -16,10 +18,13 @@ $(function () {
     const menuButton = $('.menu-button');
     const menu = $('.nav');
 
-    menuButton.on('click', handleMenuDisplay);
+    menuButton.on('click', (e) => {
+        e.stopPropagation();
+        handleMenuDisplay();
+    });
 
     function handleMenuDisplay() {
-        $(this).toggleClass('open');
+        menuButton.toggleClass('open');
         menu.css('display') === 'none'
             ? menu.slideDown(500)
             : menu.slideUp(500);
@@ -46,6 +51,17 @@ $(function () {
         }
         previousWidth = currentWidth;
     }
+
+    window.addEventListener('click', () => {
+        currentWidth = $(window).width();
+        if (currentWidth < menuBreakpoint && menu.css('display') !== 'none')
+            handleMenuDisplay();
+    });
+
+    document.querySelector('.nav').addEventListener('clink', (e) => {
+        currentWidth = $(window).width();
+        if (currentWidth < menuBreakpoint) e.stopPropagation();
+    });
 
     $('.nav__link, .footer__nav-link').on('click', handleMenuClick);
 
