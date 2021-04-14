@@ -85,24 +85,8 @@
     .swiper-pagination {
         display: block;
     }
-    .swiper-pagination-bullet {
-        width: 18px;
-        height: 18px;
-        border-radius: 50%;
-        margin: 0 15px !important;
-        background: #ebebeb;
-        opacity: 1;
-    }
     .swiper-pagination-bullet-active {
         background: #ff4e2e;
-    }
-}
-
-@media (max-width: 768px) {
-    .swiper-pagination-bullet {
-        width: 13px;
-        height: 13px;
-        margin: 0 10px !important;
     }
 }
 
@@ -113,18 +97,5 @@
     }
     .card:hover {
         transform: none;
-    }
-}
-
-@media (max-width: 425px) {
-    .swiper-pagination-bullets {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-    .swiper-pagination-bullet {
-        width: 10px;
-        height: 10px;
-        flex-shrink: 0;
     }
 }
