@@ -1,3 +1,8 @@
+.swiper-container {
+    padding: 0 20px;
+    margin: 0 -20px;
+}
+
 .swiper {
     width: 100%;
     position: relative;
@@ -98,6 +103,16 @@
         width: 13px;
         height: 13px;
         margin: 0 10px !important;
+    }
+}
+
+@media (max-width: 519.98px) {
+    .swiper-container {
+        padding: 0;
+        margin: 0;
+    }
+    .card:hover {
+        transform: none;
     }
 }
 
